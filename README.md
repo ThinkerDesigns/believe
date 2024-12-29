@@ -1,4 +1,4 @@
-# Look Outsude
+# Look Outside
 
 ## Overview
 
