@@ -45,6 +45,7 @@ set(OLD_GLOB
   "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Debug/lookOutside_autogen/EWIEGA46WW/moc_mainwindow.cpp"
   "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Debug/lookOutside_autogen/EWIEGA46WW/moc_weatherdatafetcher.cpp"
   "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Debug/lookOutside_autogen/EWIEGA46WW/moc_weatherwidget.cpp"
+  "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Debug/lookOutside_autogen/EWIEGA46WW/qrc_resources.cpp"
   "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Debug/lookOutside_autogen/mocs_compilation.cpp"
   "/Users/user1/Documents/GitHub/believe/lookOutside/main.cpp"
   "/Users/user1/Documents/GitHub/believe/lookOutside/mainwindow.cpp"

@@ -1,0 +1,28 @@
+{
+	"BUILD_DIR" : "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/lookOutside_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/user1/Documents/GitHub/believe/lookOutside",
+	"CMAKE_SOURCE_DIR" : "/Users/user1/Documents/GitHub/believe/lookOutside",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/lookOutside_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/user1/Documents/GitHub/believe/lookOutside/images/ok.png",
+		"/Users/user1/Documents/GitHub/believe/lookOutside/images/cold.png",
+		"/Users/user1/Documents/GitHub/believe/lookOutside/images/good.png",
+		"/Users/user1/Documents/GitHub/believe/lookOutside/images/hot.png"
+	],
+	"LOCK_FILE" : "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/lookOutside_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/Volumes/Transcend/qt/6.8.1/macos/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/lookOutside_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/user1/Documents/GitHub/believe/lookOutside/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

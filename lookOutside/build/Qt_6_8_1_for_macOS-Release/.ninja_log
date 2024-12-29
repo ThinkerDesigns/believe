@@ -1,0 +1,16 @@
+# ninja log v6
+4	196	1735465224872028693	/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/cmake.verify_globs	776b996153957ac5
+196	2286	1735465227099036305	lookOutside_autogen/timestamp	a2a9801de778546
+196	2286	1735465227099036305	lookOutside_autogen/mocs_compilation.cpp	a2a9801de778546
+196	2286	1735465227099036305	/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/lookOutside_autogen/timestamp	a2a9801de778546
+196	2286	1735465227099036305	/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/lookOutside_autogen/mocs_compilation.cpp	a2a9801de778546
+2288	2340	1735465227206186142	lookOutside_autogen/EWIEGA46WW/qrc_resources.cpp	b76d88ccce5afd2
+2288	2340	1735465227206186142	/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/lookOutside_autogen/EWIEGA46WW/qrc_resources.cpp	b76d88ccce5afd2
+2341	2475	1735465227208957292	CMakeFiles/lookOutside.dir/weatherapi.cpp.o	47ee963ce39dfdf7
+2341	2537	1735465227209181999	CMakeFiles/lookOutside.dir/lookOutside_autogen/EWIEGA46WW/qrc_resources.cpp.o	44665e8d56da1004
+2340	3433	1735465227208436128	CMakeFiles/lookOutside.dir/mainwindow.cpp.o	aa984656f3f42535
+2340	3449	1735465227208559669	CMakeFiles/lookOutside.dir/weatherdatafetcher.cpp.o	f8da9ff12f6890b0
+2340	3569	1735465227208290379	CMakeFiles/lookOutside.dir/main.cpp.o	84ea8ec35364e919
+2340	3574	1735465227208033756	CMakeFiles/lookOutside.dir/lookOutside_autogen/mocs_compilation.cpp.o	82f42592efdad0d8
+2340	3794	1735465227208668252	CMakeFiles/lookOutside.dir/weatherwidget.cpp.o	f191c28c7ef4fc91
+3794	4309	1735465228662762144	lookOutside.app/Contents/MacOS/lookOutside	53f57e2a83668e89

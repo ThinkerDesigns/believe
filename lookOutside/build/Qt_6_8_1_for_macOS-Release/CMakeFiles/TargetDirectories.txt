@@ -1,0 +1,9 @@
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/lookOutside.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/edit_cache.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/rebuild_cache.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/list_install_components.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/install.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/install/local.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/install/strip.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/lookOutside_autogen_timestamp_deps.dir
+/Users/user1/Documents/GitHub/believe/lookOutside/build/Qt_6_8_1_for_macOS-Release/CMakeFiles/lookOutside_autogen.dir
