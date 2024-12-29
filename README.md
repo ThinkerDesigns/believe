@@ -1,109 +1,66 @@
-# Qt Image Resource Project
+# Look Outside
 
-This project demonstrates how to use a Qt Resource File (`.qrc`) to embed and display an image in a Qt application. The image is loaded from the resource file and displayed on a `QLabel` widget in the application window.
+## Overview
 
-## Project Structure
+This application provides real-time weather information, including current weather conditions, hourly forecasts, 5-day forecasts, and weather alerts. Users can input a city name to fetch weather data using the OpenWeatherMap API. The app supports temperature unit conversion between Celsius, Fahrenheit, and Kelvin. Additionally, it provides visual cues by displaying images corresponding to the temperature range.
 
-```
-/QtImageResourceProject
-├── images/
-│   └── myimage.png           # Image file to be embedded
-├── resources.qrc            # Qt Resource File
-├── main.cpp                  # Main application code
-├── mainwindow.ui             # UI file (if applicable)
-└── CMakeLists.txt or .pro    # Project configuration file
-```
+## Features
 
-## Steps to Use This Project
+- **Current Weather**: Displays temperature, humidity, pressure, and weather conditions for a given city.
+- **Hourly Forecast**: Provides a detailed hourly forecast with temperatures and weather descriptions.
+- **5-Day Forecast**: Shows the forecast for the next five days, including daily temperatures and weather descriptions.
+- **Weather Alerts**: Displays any active weather alerts for the entered location.
+- **Temperature Unit Conversion**: Toggle between Celsius (°C), Fahrenheit (°F), and Kelvin (K) for temperature units.
+- **Temperature Images**: Displays images corresponding to the current temperature (cold, warm, good, or hot).
 
-1. **Clone or Download the Project:**
-   Clone or download the repository to your local machine.
+## Setup
 
-2. **Add Image to Resources:**
-   - Place the image (`myimage.png`) in the `images/` folder.
-   - Make sure the `resources.qrc` file includes the correct path to your image file:
+1. **Install Required Libraries**: Ensure that your environment has the necessary Qt libraries installed for managing UI components, networking, and JSON parsing.
    
-     ```xml
-     <RCC>
-         <qresource prefix="/">
-             <file>images/myimage.png</file>
-         </qresource>
-     </RCC>
-     ```
+2. **API Key**: Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api) and replace the placeholder `apiKey` in the code.
 
-3. **Build the Project:**
-   - Open the project in Qt Creator or configure it using CMake.
-   - Build the project. Qt will process the `.qrc` file and embed the image.
+3. **Add Images**: The app uses images for temperature visualization. Add the following images to your resource file:
+    - `cold.png` (for temperatures below 0°C)
+    - `ok.png` (for temperatures between 0°C and 15°C)
+    - `good.png` (for temperatures between 15°C and 25°C)
+    - `hot.png` (for temperatures above 25°C)
 
-4. **Run the Application:**
-   - After building, run the application. You should see the image displayed in the application window.
+## UI Components
 
-## Code Overview
+- **Location Input**: A text input field for entering the city name.
+- **Weather Button**: Fetches the weather data for the entered location.
+- **Weather Label**: Displays the current weather data, including temperature and description.
+- **Alert Label**: Shows any active weather alerts for the city.
+- **Hourly Label**: Displays the hourly weather forecast.
+- **5-Day Label**: Shows the 5-day weather forecast.
+- **Unit Button**: Switches between Celsius, Fahrenheit, and Kelvin units for temperature display.
+- **Temperature Image Label**: Displays images corresponding to the temperature range.
 
-### `resources.qrc`
-The `.qrc` file is used to embed resources like images into your Qt application. This file specifies the location of the image inside the project directory, which is then accessed by your application.
+## Functionality
 
-Example:
+- **Fetching Weather Data**: The `onWeatherButtonClicked` method sends a request to the OpenWeatherMap API using the location entered by the user. The data is retrieved and displayed in the app's UI.
 
-```xml
-<RCC>
-    <qresource prefix="/">
-        <file>images/myimage.png</file>
-    </qresource>
-</RCC>
-```
+- **Handling Weather Data**: The `onWeatherDataReceived` method processes the weather data returned by the API, extracting details such as temperature, weather description, humidity, pressure, and other related information. It updates the UI with this data.
 
-### `main.cpp`
-In the `main.cpp` file, the image is loaded from the resources using the `QPixmap` class. It is then set to a `QLabel` widget for display.
+- **Temperature Unit Conversion**: The `onUnitButtonClicked` method allows the user to switch between Celsius, Fahrenheit, and Kelvin units. The displayed temperature adjusts accordingly.
 
-```cpp
-#include <QPixmap>
-#include <QLabel>
-#include <QVBoxLayout>
-#include <QApplication>
+- **Hourly and 5-Day Forecast**: The `parseHourlyForecast` and `parseFiveDayForecast` methods handle the parsing of hourly and 5-day forecast data from the API and update the respective UI elements.
 
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    
-    QLabel* imageLabel = new QLabel();
-    QVBoxLayout* layout = new QVBoxLayout();
-    layout->addWidget(imageLabel);
+- **Weather Alerts**: The `parseWeatherAlerts` method displays any weather alerts for the requested location.
 
-    QPixmap pixmap(":/images/myimage.png");  // Path as per .qrc file
-    if (pixmap.isNull()) {
-        imageLabel->setText("Failed to load image.");
-    } else {
-        imageLabel->setPixmap(pixmap);
-        imageLabel->setScaledContents(true);
-    }
+## Usage
 
-    QWidget window;
-    window.setLayout(layout);
-    window.show();
+1. Enter a city name in the location input field.
+2. Click the "Get Weather" button to fetch the current weather data and display it on the screen.
+3. Use the unit button to toggle between Celsius, Fahrenheit, and Kelvin for temperature display.
+4. View hourly and 5-day forecasts, as well as weather alerts, if available.
+5. Temperature images will be updated according to the current temperature.
 
-    return a.exec();
-}
-```
+## Notes
 
-## Requirements
-
-- Qt 5.15 or higher (recommended for better compatibility).
-- A Qt-compatible IDE like Qt Creator for easy project management.
-- CMake or `.pro` file for building the project.
+- Ensure your OpenWeatherMap API key is valid and correctly inserted into the code.
+- The temperature images are assigned based on predefined temperature ranges and are displayed to help visualize the current weather.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or issues, feel free to open an issue or contact [your_name] at [your_email].
-
-
-### Key Sections:
-- **Project Structure**: Describes the basic folder structure of the project.
-- **Steps to Use**: Gives clear steps for adding the image, building, and running the project.
-- **Code Overview**: Explains the role of the `.qrc` file and the main code for loading and displaying the image.
-- **Requirements**: Specifies the Qt version and tools needed to run the project.
-- **License**: Suggests an open-source license (MIT) which can be replaced as needed.
+This project is licensed under the MIT License. See the LICENSE file for details.
